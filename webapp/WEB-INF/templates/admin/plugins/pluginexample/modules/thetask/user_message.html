@@ -1,0 +1,8 @@
+${user_message!''}
+<br/>
+<#if map_download_url?has_content>
+<#list map_download_url?keys as file_name>
+    <a href="${(map_download_url[file_name])!''}">${(file_name)!''}</a>
+    <br/>
+</#list>
+</#if>

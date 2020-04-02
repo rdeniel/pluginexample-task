@@ -1,0 +1,45 @@
+<div class="row">
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <fieldset>
+        <legend> #i18n{module.workflow.thetask.task_thetask_config.title}</legend>
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-12 col-md-3 col-lg-3" for="email_sender">#i18n{module.workflow.thetask.task_thetask_config.label_title} * :</label>
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                <input type="text" name="title" id="" value="<#if config?has_content>${config.title!}</#if>"  maxlength="255">
+                <span class="help-block">#i18n{module.workflow.thetask.task_thetask_config.label_title_thetask}</span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-12 col-md-3 col-lg-3" for="email_sender">#i18n{module.workflow.thetask.task_thetask_config.label_default_message} * :</label>
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                <textarea name="defaultMessage" rows="4" cols="80"><#if config?has_content>${(config.defaultMessage)!}</#if></textarea>
+                <span class="help-block">#i18n{module.workflow.thetask.task_thetask_config.default_message.description}</span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-12 col-md-3 col-lg-3" for="is_mandatory">#i18n{module.workflow.thetask.task_thetask_config.label_mandatory} :</label>
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+            <input name="mandatory" value="true" type="radio" <#if config?exists && config.mandatory>checked="checked"</#if> />
+                   #i18n{module.workflow.thetask.task_thetask_config.label_yes}
+                   <input name="mandatory" value="false" type="radio" <#if config?exists && !config.mandatory>checked="checked"</#if> />
+                   #i18n{module.workflow.thetask.task_thetask_config.label_no}
+                   <br/>
+            <span class="help-block">#i18n{module.workflow.thetask.task_thetask_config.label_mandatory_thetask}</span>
+            </div>
+            <label class="control-label col-xs-12 col-sm-12 col-md-3 col-lg-3" for="is_richText">#i18n{module.workflow.thetask.task_thetask_config.label_richtext} :</label>
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+            <input name="richText" value="true" type="radio" <#if config?exists && config.richText>checked="checked"</#if> />
+                   #i18n{module.workflow.thetask.task_thetask_config.label_yes}
+                   <input name="richText" value="false" type="radio" <#if config?exists && !config.richText>checked="checked"</#if> />
+                   #i18n{module.workflow.thetask.task_thetask_config.label_no}
+                   <br/>
+            <span class="help-block">#i18n{module.workflow.thetask.task_thetask_config.label_richtext_thetask}</span>
+            </div>
+            
+        </div>
+        
+     </fieldset>
+	</div>
+</div>

@@ -1,0 +1,18 @@
+<#if config.richText>
+    <#include "/admin/util/editor/editor.html" />
+</#if>
+
+<#if config?exists>
+    <#if config.title?exists >
+    <label for="thetask_message_message_${config.idTask}">  ${config.title} <#if config.mandatory>*</#if> :</label>
+    </#if>
+	<textarea name="thetask_message_${config.idTask}" rows="4" cols="80"  <#if config.richText>class="richtext"</#if> >
+            <#if message?has_content>${message}
+            <#else>${config.defaultMessage}
+            </#if>
+        </textarea>
+</#if>
+
+<#if config.richText>
+	<@initEditor />     
+</#if>
