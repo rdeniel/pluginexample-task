@@ -31,12 +31,12 @@
  *
  * License 1.0
  */
-package fr.paris.lutece.plugins.pluginexample.modules.thetask.web;
+package fr.paris.lutece.plugins.workflow.modules.example.web;
 
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.business.Workflow;
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.services.ITheTaskService;
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.services.TheTaskService;
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.business.WorkflowConfig;
+import fr.paris.lutece.plugins.workflow.modules.example.business.Workflow;
+import fr.paris.lutece.plugins.workflow.modules.example.business.WorkflowConfig;
+import fr.paris.lutece.plugins.workflow.modules.example.services.IExampleTaskService;
+import fr.paris.lutece.plugins.workflow.modules.example.services.ExampleTaskService;
 import fr.paris.lutece.plugins.workflow.utils.WorkflowUtils;
 import fr.paris.lutece.plugins.workflow.web.task.AbstractTaskComponent;
 import fr.paris.lutece.plugins.workflowcore.service.task.ITask;
@@ -117,7 +117,7 @@ public class WorkflowJspBean extends AbstractTaskComponent
         if ( config != null )
             strInfo = String.valueOf( config.getId( ) );
 
-        ITheTaskService workflowService = SpringContextService.getBean( TheTaskService.BEAN_SERVICE );
+        IExampleTaskService workflowService = SpringContextService.getBean( ExampleTaskService.BEAN_SERVICE );
         Workflow workflow = workflowService.find( task.getId( ) );
 
         if ( workflow != null )

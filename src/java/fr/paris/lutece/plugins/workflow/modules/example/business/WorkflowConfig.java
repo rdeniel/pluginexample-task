@@ -31,25 +31,28 @@
  *
  * License 1.0
  */
-package fr.paris.lutece.plugins.pluginexample.modules.thetask.business;
+package fr.paris.lutece.plugins.workflow.modules.example.business;
 
 import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.NotEmpty;
+
+import fr.paris.lutece.plugins.workflowcore.business.config.TaskConfig;
+
 import java.io.Serializable;
 
 /**
- * This is the business class for the object Workflow
+ * This is the business class for the object Workflowconfig
  */ 
-public class Workflow implements Serializable
+public class WorkflowConfig extends TaskConfig
 {
-    private static final long serialVersionUID = 1L;
 
     // Variables declarations 
     private int _nId;
     
-    @NotEmpty( message = "#i18n{module.pluginexample.thetask.validation.workflow.Message.notEmpty}" )
-    @Size( max = 255 , message = "#i18n{module.pluginexample.thetask.validation.workflow.Message.size}" ) 
-    private String _strMessage;
+    @Size( max = 255 , message = "#i18n{module.pluginexample.thetask.validation.workflowconfig.DefaultMessage.size}" ) 
+    private String _strDefaultMessage;
+
+	private boolean _bMandatory;
 
     /**
      * Returns the Id
@@ -70,20 +73,36 @@ public class Workflow implements Serializable
     }
     
     /**
-     * Returns the Message
-     * @return The Message
+     * Returns the DefaultMessage
+     * @return The DefaultMessage
      */
-    public String getMessage( )
+    public String getDefaultMessage( )
     {
-        return _strMessage;
+        return _strDefaultMessage;
     }
 
     /**
-     * Sets the Message
-     * @param strMessage The Message
+     * Sets the DefaultMessage
+     * @param strDefaultMessage The DefaultMessage
      */ 
-    public void setMessage( String strMessage )
+    public void setDefaultMessage( String strDefaultMessage )
     {
-        _strMessage = strMessage;
+        _strDefaultMessage = strDefaultMessage;
+    }
+    /**
+     * @return true if the comment is mandatory, false otherwise
+     */
+    public boolean isMandatory( )
+    {
+        return _bMandatory;
+    }
+
+    /**
+     * @param bMandatory
+     *            true if the comment is mandatory, false otherwise
+     */
+    public void setMandatory( boolean bMandatory )
+    {
+        _bMandatory = bMandatory;
     }
 }

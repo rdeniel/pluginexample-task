@@ -32,7 +32,7 @@
  * License 1.0
  */
 
-package fr.paris.lutece.plugins.pluginexample.modules.thetask.business;
+package fr.paris.lutece.plugins.workflow.modules.example.business;
 
 import fr.paris.lutece.plugins.workflow.utils.WorkflowUtils;
 import fr.paris.lutece.plugins.workflowcore.business.config.ITaskConfigDAO;

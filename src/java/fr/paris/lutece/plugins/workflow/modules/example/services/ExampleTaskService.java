@@ -1,4 +1,4 @@
-package fr.paris.lutece.plugins.pluginexample.modules.thetask.services;
+package fr.paris.lutece.plugins.workflow.modules.example.services;
 
 import java.util.List;
 
@@ -8,15 +8,15 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.commons.lang.StringUtils;
 import org.springframework.transaction.annotation.Transactional;
 
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.business.IWorkflowDAO;
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.business.Workflow;
+import fr.paris.lutece.plugins.workflow.modules.example.business.IWorkflowDAO;
+import fr.paris.lutece.plugins.workflow.modules.example.business.Workflow;
 import fr.paris.lutece.plugins.workflowcore.service.action.IActionService;
 import fr.paris.lutece.plugins.workflowcore.service.state.IStateService;
 import fr.paris.lutece.portal.service.message.SiteMessageException;
 import fr.paris.lutece.portal.service.message.SiteMessageService;
 import fr.paris.lutece.portal.service.plugin.PluginService;
 
-public class TheTaskService implements ITheTaskService
+public class ExampleTaskService implements IExampleTaskService
 	{
 	    public static final String BEAN_SERVICE = "workflow-thetask.workflowService";
 

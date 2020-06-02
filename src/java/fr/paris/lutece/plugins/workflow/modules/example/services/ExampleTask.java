@@ -1,4 +1,4 @@
-package fr.paris.lutece.plugins.pluginexample.modules.thetask.services;
+package fr.paris.lutece.plugins.workflow.modules.example.services;
 
 import java.util.Locale;
 import java.util.Map;
@@ -9,14 +9,14 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.apache.commons.lang.StringUtils;
 
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.business.IWorkflowDAO;
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.business.Workflow;
+import fr.paris.lutece.plugins.workflow.modules.example.business.IWorkflowDAO;
+import fr.paris.lutece.plugins.workflow.modules.example.business.Workflow;
 import fr.paris.lutece.plugins.workflowcore.service.config.ITaskConfigService;
 import fr.paris.lutece.plugins.workflowcore.service.task.Task;
 import fr.paris.lutece.portal.business.user.AdminUser;
 import fr.paris.lutece.portal.service.i18n.I18nService;
 
-public class TheTask extends Task{
+public class ExampleTask extends Task{
 
     private static final String MESSAGE_REPLY = "module.workflow.thetask.task_thetask.labelTheTask";
 
@@ -27,7 +27,7 @@ public class TheTask extends Task{
     private AdminUser _user;
 
     @Inject
-    private ITheTaskService _thetaskService;
+    private IExampleTaskService _thetaskService;
 //    @Inject
 //    private IWorkflowDAO _workflowDAO;
     @Inject

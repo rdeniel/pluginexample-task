@@ -9,11 +9,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.paris.lutece.plugins</groupId>
 
-    <artifactId>module-pluginexample-thetask</artifactId>
+    <artifactId>module-workflow-example</artifactId>
     <packaging>lutece-plugin</packaging>
     
     <version>1.0.0-SNAPSHOT</version>
-    <name>Lutece pluginexample thetask module</name>
+    <name>Lutece workflow example module</name>
 
     <repositories>
         <repository>

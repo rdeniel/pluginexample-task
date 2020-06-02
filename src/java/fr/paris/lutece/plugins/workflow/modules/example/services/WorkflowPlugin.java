@@ -1,4 +1,4 @@
-package fr.paris.lutece.plugins.pluginexample.modules.thetask.services;
+package fr.paris.lutece.plugins.workflow.modules.example.services;
 
 import fr.paris.lutece.portal.service.plugin.Plugin;
 import fr.paris.lutece.portal.service.plugin.PluginDefaultImplementation;

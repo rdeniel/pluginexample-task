@@ -32,7 +32,7 @@
  * License 1.0
  */
  
-package fr.paris.lutece.plugins.pluginexample.modules.thetask.business;
+package fr.paris.lutece.plugins.workflow.modules.example.business;
 
 import fr.paris.lutece.portal.service.plugin.Plugin;
 import fr.paris.lutece.util.ReferenceList;

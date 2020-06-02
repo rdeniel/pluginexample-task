@@ -1,4 +1,4 @@
-package fr.paris.lutece.plugins.pluginexample.modules.thetask.services;
+package fr.paris.lutece.plugins.workflow.modules.example.services;
 
 import java.util.List;
 
@@ -6,10 +6,10 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.transaction.annotation.Transactional;
 
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.business.Workflow;
+import fr.paris.lutece.plugins.workflow.modules.example.business.Workflow;
 import fr.paris.lutece.portal.service.message.SiteMessageException;
 
-public interface ITheTaskService {
+public interface IExampleTaskService {
 	// SET
 
     /**

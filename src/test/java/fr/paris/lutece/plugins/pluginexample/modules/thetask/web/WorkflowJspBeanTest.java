@@ -34,8 +34,6 @@
 
 package fr.paris.lutece.plugins.pluginexample.modules.thetask.web;
 
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.business.Workflow;
-import fr.paris.lutece.plugins.pluginexample.modules.thetask.business.WorkflowHome;
 import java.util.List;
 import fr.paris.lutece.test.LuteceTestCase;
 import fr.paris.lutece.portal.web.LocalVariables;
@@ -44,6 +42,10 @@ import java.io.IOException;
 import org.springframework.mock.web.MockHttpServletRequest;
 import org.springframework.mock.web.MockHttpServletResponse;
 import org.springframework.mock.web.MockServletConfig;
+
+import fr.paris.lutece.plugins.workflow.modules.example.business.Workflow;
+import fr.paris.lutece.plugins.workflow.modules.example.business.WorkflowHome;
+import fr.paris.lutece.plugins.workflow.modules.example.web.WorkflowJspBean;
 import fr.paris.lutece.portal.business.user.AdminUser;
 import fr.paris.lutece.portal.service.admin.AccessDeniedException;
 import fr.paris.lutece.portal.service.admin.AdminAuthenticationService;

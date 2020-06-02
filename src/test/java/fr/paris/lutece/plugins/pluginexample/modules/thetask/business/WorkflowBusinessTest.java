@@ -34,6 +34,7 @@
 
 package fr.paris.lutece.plugins.pluginexample.modules.thetask.business;
 
+import fr.paris.lutece.plugins.workflow.modules.example.business.Workflow;
 import fr.paris.lutece.test.LuteceTestCase;
 
 
