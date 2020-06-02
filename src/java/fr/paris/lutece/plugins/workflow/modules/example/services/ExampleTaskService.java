@@ -18,7 +18,7 @@ import fr.paris.lutece.portal.service.plugin.PluginService;
 
 public class ExampleTaskService implements IExampleTaskService
 	{
-	    public static final String BEAN_SERVICE = "workflow-thetask.workflowService";
+	    public static final String BEAN_SERVICE = "workflow-example.workflowService";
 
 	    // SERVICES
 	    @Inject

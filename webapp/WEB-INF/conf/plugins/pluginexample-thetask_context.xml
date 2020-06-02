@@ -18,25 +18,25 @@
         p:pluginName="pluginexample-thetask" />
 
 <!-- Task config -->
-<bean id="workflow-thetask.TheTaskConfigService"
+<bean id="workflow-example.TheTaskConfigService"
 		class="fr.paris.lutece.plugins.workflowcore.service.config.TaskConfigService"
-		p:taskConfigDAO-ref="workflow-thetask.WorkflowConfigDAO" />
-<bean id="workflow-thetask.WorkflowConfigDAO" class="fr.paris.lutece.plugins.pluginexample.modules.thetask.business.WorkflowConfigDAO" scope="prototype" />
+		p:taskConfigDAO-ref="workflow-example.WorkflowConfigDAO" />
+<bean id="workflow-example.WorkflowConfigDAO" class="fr.paris.lutece.plugins.pluginexample.modules.thetask.business.WorkflowConfigDAO" scope="prototype" />
 
 <!--  The Task -->
-<bean id="workflow-thetask.TheTask" class="fr.paris.lutece.plugins.pluginexample.modules.thetask.services.TheTask" scope="prototype" />
-<bean id="workflow-thetask.taskTypeTheTaskType" class="fr.paris.lutece.plugins.workflowcore.business.task.TaskType"
+<bean id="workflow-example.TheTask" class="fr.paris.lutece.plugins.pluginexample.modules.thetask.services.TheTask" scope="prototype" />
+<bean id="workflow-example.taskTypeTheTaskType" class="fr.paris.lutece.plugins.workflowcore.business.task.TaskType"
 		p:key="TheTask" 
 		p:titleI18nKey="module.thetask.thetask.task_title" 
-		p:beanName="workflow-thetask.TheTask"
-		p:configBeanName="workflow-thetask.WorkflowConfig"
+		p:beanName="workflow-example.TheTask"
+		p:configBeanName="workflow-example.WorkflowConfig"
 		p:configRequired="false"
 		p:formTaskRequired="true"
 		p:taskForAutomaticAction="true" />
 
- <bean id="workflow-thetask.workflowService"
+ <bean id="workflow-example.workflowService"
         class="fr.paris.lutece.plugins.pluginexample.modules.thetask.web.WorkflowJspBean"
-        p:taskType-ref="workflow-thetask.taskTypeTheTaskType" 
-	p:taskConfigService-ref="workflow-thetask.TheTaskConfigService" />
+        p:taskType-ref="workflow-example.taskTypeTheTaskType" 
+	p:taskConfigService-ref="workflow-example.TheTaskConfigService" />
 
 </beans>

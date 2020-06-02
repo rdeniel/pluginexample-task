@@ -49,7 +49,7 @@ public class WorkflowConfig extends TaskConfig
     // Variables declarations 
     private int _nId;
     
-    @Size( max = 255 , message = "#i18n{module.pluginexample.thetask.validation.workflowconfig.DefaultMessage.size}" ) 
+    @Size( max = 255 , message = "#i18n{module.workflow.example.validation.workflowconfig.DefaultMessage.size}" ) 
     private String _strDefaultMessage;
 
 	private boolean _bMandatory;

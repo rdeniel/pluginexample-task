@@ -67,8 +67,8 @@ public class WorkflowJspBean extends AbstractTaskComponent
     private static final String PARAMETER_REPLY_VALUE = "reply_message";
 
     // Properties for page titles
-    private static final String MESSAGE_MANDATORY_FIELD = "module.pluginexample.thetask.task_config.message.mandatory.field";
-    private static final String MESSAGE_NO_CONFIGURATION_FOR_TASK_REPLY = "module.pluginexample.thetask.message.no_configuration_for_task";
+    private static final String MESSAGE_MANDATORY_FIELD = "module.workflow.example.task_config.message.mandatory.field";
+    private static final String MESSAGE_NO_CONFIGURATION_FOR_TASK_REPLY = "module.workflow.example.message.no_configuration_for_task";
 
     // MARKERS
     private static final String MARK_CONFIG = "config";

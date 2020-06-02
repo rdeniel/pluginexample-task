@@ -31,7 +31,7 @@ public class ExampleTask extends Task{
 //    @Inject
 //    private IWorkflowDAO _workflowDAO;
     @Inject
-    @Named( "workflow-thetask.TheTaskConfigService" )
+    @Named( "workflow-example.TheTaskConfigService" )
     private ITaskConfigService _taskTheTaskConfigService;
 
     /**

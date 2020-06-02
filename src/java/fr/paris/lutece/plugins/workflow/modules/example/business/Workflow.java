@@ -47,8 +47,8 @@ public class Workflow implements Serializable
     // Variables declarations 
     private int _nId;
     
-    @NotEmpty( message = "#i18n{module.pluginexample.thetask.validation.workflow.Message.notEmpty}" )
-    @Size( max = 255 , message = "#i18n{module.pluginexample.thetask.validation.workflow.Message.size}" ) 
+    @NotEmpty( message = "#i18n{module.workflow.example.validation.workflow.Message.notEmpty}" )
+    @Size( max = 255 , message = "#i18n{module.workflow.example.validation.workflow.Message.size}" ) 
     private String _strMessage;
 
     /**
